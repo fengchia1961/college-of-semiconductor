@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>逢甲大學 半導體學院 | College of Semiconductor, FCU</title>
+<meta name="description" content="逢甲大學緊鄰中科、精密機械園區及快速發展的水湳經貿園區，匯集台積電、台灣美光等科技大廠，具備豐沛產官研資源，致力培育具實作能力、產業銜接力的半導體人才。">
+<meta property="og:title" content="逢甲大學 半導體學院 | College of Semiconductor, FCU">
+<meta property="og:description" content="逢甲大學緊鄰中科、精密機械園區及快速發展的水湳經貿園區，匯集台積電、台灣美光等科技大廠，具備豐沛產官研資源，致力培育具實作能力、產業銜接力的半導體人才。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#hero" class="nav__brand">
+    <img src="assets/fcu-logo-full.png" alt="逢甲大學 Feng Chia University" class="nav__logo">
+  </a>
+
+  <nav class="nav__links" id="nav-desktop" aria-label="Primary"></nav>
+
+  <div class="nav__actions">
+    <button type="button" class="lang-btn" id="lang-toggle">EN</button>
+    <button type="button" class="menu-toggle" id="menu-toggle" aria-label="menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-backdrop" id="mobile-backdrop"></div>
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-menu__links" id="mobile-menu-links" aria-label="Mobile"></nav>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="hero__scanline" aria-hidden="true"></div>
+    <div class="hero__ring hero__ring--1" aria-hidden="true"></div>
+    <div class="hero__ring hero__ring--2" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="badge">
+        <span class="badge__dot"></span>
+        <span id="hero-badge"></span>
+      </div>
+      <h1 class="hero__title" id="hero-title"></h1>
+      <div class="hero__subtitle" id="hero-titlesub"></div>
+      <p class="hero__desc" id="hero-desc"></p>
+
+      <div class="hero__cta">
+        <a href="#chain" class="btn btn--primary" id="hero-cta-primary"></a>
+        <a href="#global" class="btn btn--outline-light" id="hero-cta-secondary"></a>
+      </div>
+
+      <div class="stats-nav" id="stats-nav">
+        <button type="button" class="scroll-btn scroll-btn--dark" id="stats-scroll-left" aria-label="scroll left">←</button>
+        <button type="button" class="scroll-btn scroll-btn--dark" id="stats-scroll-right" aria-label="scroll right">→</button>
+      </div>
+      <div class="stats-grid scroll-hide" id="stats-grid"></div>
+
+      <div class="hero__note" id="hero-note"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="about__grid">
+      <div>
+        <div class="kicker" id="about-kicker"></div>
+        <h2 class="h2" id="about-title"></h2>
+        <p class="about__body" id="about-body"></p>
+      </div>
+      <div class="about__photo">
+        <img src="assets/fcu-campus.jpg" alt="逢甲大學共善樓">
+        <div class="corner corner--tl"></div>
+        <div class="corner corner--br"></div>
+        <div class="photo-label" id="about-img-label"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY CHAIN -->
+  <section id="chain" class="section section--alt">
+    <div class="section__inner">
+      <div class="section-head">
+        <div>
+          <div class="kicker" id="chain-kicker"></div>
+          <h2 class="h2" id="chain-title"></h2>
+          <div class="section-head__desc" id="chain-desc"></div>
+        </div>
+        <div class="scroll-btns">
+          <button type="button" class="scroll-btn" id="chain-scroll-left" aria-label="scroll left">←</button>
+          <button type="button" class="scroll-btn" id="chain-scroll-right" aria-label="scroll right">→</button>
+        </div>
+      </div>
+      <div class="chain-track scroll-hide" id="chain-track"></div>
+    </div>
+  </section>
+
+  <!-- GLOBAL COLLABORATION -->
+  <section id="global" class="section">
+    <div class="section-intro">
+      <div class="kicker" id="global-kicker"></div>
+      <h2 class="h2" id="global-title"></h2>
+      <p class="section-intro__desc" id="global-desc"></p>
+    </div>
+
+    <div id="programs-container"></div>
+
+    <div class="uni-block">
+      <div class="section-head">
+        <h3 class="uni-block__label" id="uni-label"></h3>
+        <div class="scroll-btns">
+          <button type="button" class="scroll-btn" id="uni-scroll-left" aria-label="scroll left">←</button>
+          <button type="button" class="scroll-btn" id="uni-scroll-right" aria-label="scroll right">→</button>
+        </div>
+      </div>
+      <div class="uni-track scroll-hide" id="uni-grid"></div>
+    </div>
+  </section>
+
+  <!-- UPCOMING LABS -->
+  <section id="labs" class="section section--dark">
+    <div class="dark-grid-bg" aria-hidden="true"></div>
+    <div class="section__inner">
+      <div class="badge">
+        <span class="badge__dot"></span>
+        <span id="labs-kicker"></span>
+      </div>
+      <h2 class="h2 h2--light" id="labs-title"></h2>
+      <p class="dark-desc" id="labs-desc"></p>
+      <div class="labs-grid" id="labs-grid"></div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="section section--alt">
+    <div class="section__inner">
+      <div class="section-head">
+        <div>
+          <div class="kicker" id="partners-kicker"></div>
+          <h3 class="h2 h2--tight" id="partners-title"></h3>
+        </div>
+        <div class="scroll-btns">
+          <button type="button" class="scroll-btn" id="partners-scroll-left" aria-label="scroll left">←</button>
+          <button type="button" class="scroll-btn" id="partners-scroll-right" aria-label="scroll right">→</button>
+        </div>
+      </div>
+
+      <div class="partners-track scroll-hide" id="partners-track"></div>
+
+      <div class="other-partners" id="other-partners" hidden>
+        <div class="other-partners__label" id="other-partners-label"></div>
+        <div class="other-partners__list" id="other-partners-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHT -->
+  <section id="highlight" class="section section--dark">
+    <div class="dark-grid-bg" aria-hidden="true"></div>
+    <div class="section__inner">
+      <div class="pill" id="highlight-badge"></div>
+      <h2 class="h2 h2--light highlight__title" id="highlight-title"></h2>
+      <p class="dark-desc highlight__desc" id="highlight-desc"></p>
+      <blockquote class="highlight__quote">
+        <p id="highlight-quote"></p>
+        <cite id="highlight-quoteby"></cite>
+      </blockquote>
+      <a href="#" target="_blank" rel="noopener" class="btn btn--outline-light" id="highlight-link"></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact" class="footer">
+  <div class="footer__top">
+    <div class="footer__label" id="contact-title"></div>
+    <div id="contact-address"></div>
+    <div id="contact-phone"></div>
+    <div id="contact-email"></div>
+    <a href="https://www.fcu.edu.tw/" target="_blank" rel="noopener" class="footer__site" id="contact-site"></a>
+  </div>
+  <div class="footer__bottom" id="contact-copyright"></div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
